@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for XYZ Cricket Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="Home">
+        <h1>Register for XYZ Cricket Tournament</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="register" class="newsletter">
+            <h3>Team Registration</h3>
+            <form id="teamRegistrationForm">
+            
+                <div class="form-stage" id="stage-1">
+                    <label for="teamName">Team Name:</label>
+                    <input type="text" id="teamName" name="teamName" required>
+                    <button type="button" onclick="nextStage(1)">Next</button>
+                </div>
+    
+            
+                <div class="form-stage" id="stage-2" style="display:none;">
+                    <label for="matchFormat">Select Match Format:</label>
+                    <select id="matchFormat" name="matchFormat" required>
+                        <option value="Test">Test</option>
+                        <option value="T20">T20</option>
+                        <option value="ODI">ODI</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </header>
+
+    <footer>
+        <p>© 2024 XYZ Cricket Organization. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
